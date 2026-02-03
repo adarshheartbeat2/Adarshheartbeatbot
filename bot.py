@@ -16,7 +16,8 @@ from telegram.ext import (
 from PIL import Image, ImageEnhance, ImageDraw, ImageFont
 
 # ================== CONFIG ==================
-BOT_TOKEN = "8580135563:AAHOqll9NDDJY2MmCL7h3QHIxbCNC5DmDkY"
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+
 
 ADMIN_ID = 6744509694   # <-- apna numeric telegram ID
 
@@ -335,3 +336,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
